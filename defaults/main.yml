@@ -1,5 +1,8 @@
 ---
 
+# Specific test configuration
+newrelic_test_mode: false
+
 # NewRelic install configuration
 newrelic_apt_key_url: https://download.newrelic.com/548C16BF.gpg
 newrelic_apt_url: http://apt.newrelic.com/debian/
