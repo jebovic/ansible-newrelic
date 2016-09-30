@@ -1,6 +1,8 @@
 NewRelic
 ========
 
+[![Build Status](https://travis-ci.org/jebovic/ansible-newrelic.svg?branch=master)](https://travis-ci.org/jebovic/ansible-newrelic)
+
 Install and configure New Relic nrsysmond daemon
 
 Role Variables
