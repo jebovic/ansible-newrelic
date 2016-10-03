@@ -1,7 +1,7 @@
 NewRelic
 ========
 
-[![Build Status](https://travis-ci.org/jebovic/ansible-newrelic.svg?branch=master)](https://travis-ci.org/jebovic/ansible-newrelic)
+[![Build Status](https://travis-ci.org/jebovic/ansible-newrelic.svg?branch=master)](https://travis-ci.org/jebovic/ansible-newrelic) [![Ansible Galaxy](https://img.shields.io/badge/galaxy-jebovic.newrelic-blue.svg?style=flat)](https://galaxy.ansible.com/jebovic/newrelic)
 
 Install and configure New Relic nrsysmond daemon
 
