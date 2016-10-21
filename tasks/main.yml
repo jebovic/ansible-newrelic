@@ -37,6 +37,7 @@
   service:
     name:  "{{ item }}"
     state: started
+    enabled: yes
   with_items:
     - newrelic-sysmond
   when: not newrelic_test_mode
