@@ -8,7 +8,7 @@ Install and configure New Relic nrsysmond daemon
 Role Variables
 --------------
 
-```
+```yaml
 # NewRelic install configuration
 newrelic_apt_key_url: https://download.newrelic.com/548C16BF.gpg
 newrelic_apt_url: http://apt.newrelic.com/debian/
@@ -32,11 +32,16 @@ newrelic_timeout: 30
 Example Playbook
 ----------------
 
+```yaml
+- hosts: servers
+  roles:
+     - { role: jebovic.newrelic }
 ```
-    - hosts: servers
-      roles:
-         - { role: jebovic.newrelic }
-```
+
+Tags
+----
+
+* newrelic_config : only update config and restart service
 
 License
 -------

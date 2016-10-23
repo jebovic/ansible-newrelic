@@ -32,6 +32,7 @@
   with_items:
     - nrsysmond.cfg
   notify: restart newrelic-agent
+  tags: newrelic_config
 
 - name: service start
   service:
