@@ -7,10 +7,22 @@ Install and configure New Relic nrsysmond daemon
 
 This role is a part of my [OPS project](https://github.com/jebovic/ops), follow this link to see it in action. OPS provides a lot of stuff, like a vagrant file for development VMs, playbooks for roles orchestration, inventory files, examples for roles configuration, ansible configuration file, and many more.
 
+Compatibility
+-------------
+
+Tested and approved on :
+
+* Debian jessie (8+)
+* Ubuntu Trusty (14.04 LTS)
+* Ubuntu Xenial (16.04 LTS)
+
 Role Variables
 --------------
 
 ```yaml
+# Specific test configuration
+newrelic_test_mode: false
+
 # NewRelic install configuration
 newrelic_apt_key_url: https://download.newrelic.com/548C16BF.gpg
 newrelic_apt_url: http://apt.newrelic.com/debian/
@@ -38,6 +50,16 @@ Example Playbook
 - hosts: servers
   roles:
      - { role: jebovic.newrelic }
+```
+
+Example : config
+----------------
+
+```yaml
+# newrelic keys
+# tip : put your sensitive keys and passwords into an ansible-vault encoded file, prefix it with "vault_" for clarity
+newrelic_sysmond_key: "{{ vault_newrelic_sysmond_key }}"
+newrelic_license: "{{ vault_newrelic_key }}"
 ```
 
 Tags
